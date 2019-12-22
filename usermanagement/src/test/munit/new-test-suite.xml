@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="new-test-suite.xml" />
+	<munit:test name="new-test-suite-put:\(id):usermanagement-configTest" doc:id="01dee4d1-0dac-428a-9d63-623670fc69bf" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to put:\(id):usermanagement-config" doc:id="a742d4de-f66e-4007-8526-23000633fad3" name="put:\(id):usermanagement-config"/>
+		</munit:execution>
+	</munit:test>
+	<munit:test name="new-test-suite-delete:\(id):usermanagement-configTest" doc:id="99bb404c-390f-4fa7-89f0-d1a34fc66b7f" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to delete:\(id):usermanagement-config" doc:id="b0f14668-9a16-4c2f-b028-8be0caa71c8c" name="delete:\(id):usermanagement-config"/>
+		</munit:execution>
+	</munit:test>
+	<munit:test name="new-test-suite-get:\users:usermanagement-configTest" doc:id="d411c01c-5bb5-4669-b58a-b9bc26a5c2a1" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to get:\users:usermanagement-config" doc:id="144f2468-1b8e-4ead-b7dd-154c7f75461d" name="get:\users:usermanagement-config"/>
+		</munit:execution>
+	</munit:test>
+	<munit:test name="new-test-suite-get:\(id):usermanagement-configTest" doc:id="308b18b3-5634-4d49-9b10-a5667c319911" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to get:\(id):usermanagement-config" doc:id="d24eda1d-b810-41d8-ab19-df0072fc1f32" name="get:\(id):usermanagement-config"/>
+		</munit:execution>
+	</munit:test>
+	<munit:test name="new-test-suite-post:\users:usermanagement-configTest" doc:id="2f9ce695-b5ab-4860-a358-14219225a6ca" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to post:\users:usermanagement-config" doc:id="dd81acef-67ef-4e60-8b4b-1cb2ac0eca19" name="post:\users:usermanagement-config"/>
+		</munit:execution>
+	</munit:test>
+
+
+</mule>

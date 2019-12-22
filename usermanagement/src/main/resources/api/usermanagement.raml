@@ -1,0 +1,53 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/b4eb13bf-05e8-49fd-9b83-a3bccc17f879/ # 
+
+title: UserManagement
+version: 1.0
+
+/users:
+
+  get:
+    description: get all user
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              [{
+                "id":1,
+                "first":"Assefa",
+                "last" : "Aragaw",
+                "department":"Mulesoft"
+              }]
+  post:
+    body:
+      application/json:
+         example: |
+              {
+                
+                "first":"Assefa",
+                "last" : "Aragaw",
+                "department":"Mulesoft"
+              }
+          
+/{id}:  
+ get:
+    description: Find a user
+ delete:
+    description: delete a user
+ put:
+    description: update a single user
+    responses:
+       200:
+         body:
+            application/json:
+             example: |
+              [{
+                "id":1,
+                "first":"Assefa",
+                "last" : "Aragaw",
+                "department":"Mulesoft"
+              }]
+                
+      
+
